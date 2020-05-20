@@ -1,5 +1,5 @@
 # insta-social-manager
-HOW TO RUN THE APP
+## HOW TO RUN THE APP
 
 NB: This guildlines are for a windows environment, prefer using windows powershell
 
