@@ -8,9 +8,12 @@ from django.views.generic import TemplateView,CreateView
 
 
 class Home(TemplateView):
-    template_name = 'person_form.html'
+    template_name = 'index.html'
     
+class Dashboard(TemplateView):
+    template_name='dashboard.html'
 
+    
 class PersonCreateView(CreateView):
     
     form_class=UserProfileForm

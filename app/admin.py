@@ -6,4 +6,10 @@ from .models import Person,UserProfiles
 
 # Register your models here.
 admin.site.register(Person)
-admin.site.register(UserProfiles)
+
+class UserProfilesAdmin(admin.ModelAdmin):
+    list_display=['firstname' ,'lastname' ,'contact' ,
+'email' ]
+    #search_fields=['firstname' ,'lastname','contact','email']
+ 
+admin.site.register(UserProfiles,UserProfilesAdmin)   
