@@ -3,7 +3,7 @@
 
 NB: This guildlines are for a windows environment, prefer using windows powershell
 
-After cloning cloning the app:
+* After cloning cloning the app:
 
 Make sure you have python3 and pip3 installed in your machine 
 
