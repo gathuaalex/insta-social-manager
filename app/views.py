@@ -10,10 +10,6 @@ class Home(TemplateView):
     template_name = 'index.html'
 
 
-class Dashboard(TemplateView):
-    template_name = 'dashboard.html'
-
-
 class PersonCreateView(CreateView):
     form_class = UserProfileForm
     template_name = 'person_form.html'

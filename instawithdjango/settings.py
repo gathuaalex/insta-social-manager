@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     # custom apps go here...
     'app.apps.AppConfig',
+    'dashboard.apps.DashboardConfig',
    
 ]
 
