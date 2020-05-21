@@ -7,21 +7,21 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <title>Oxygen - One Page HTML Template | Themeum</title>
-  <link href="{% static "/app/css/bootstrap.min.css"%}" rel="stylesheet">
-  <link href="{% static "/app/css/animate.min.css"%}" rel="stylesheet"> 
-  <link href="{% static "/app/css/font-awesome.min.css"%} rel="stylesheet">
-  <link href="{% static "/app/css/lightbox.css"%}" rel="stylesheet">
-  <link href="{% static "/app/css/main.css" %}" rel="stylesheet">
-  <link id="css-preset" href="{% static "/app/css/presets/preset4.css"%}" rel="stylesheet">
-  <link href="{% static "/app/css/responsive.css"%}" rel="stylesheet">
+  <link type="text/css" href="{% static 'app/css/bootstrap.min.css'%}" rel="stylesheet">
+  <link type="text/css" href="{% static 'app/css/animate.min.css' %}" rel="stylesheet">
+  <link type="text/css" href="{% static 'app/css/font-awesome.min.css' %}" rel="stylesheet">
+  <link type="text/css" href="{% static 'app/css/lightbox.css' %}" rel="stylesheet">
+  <link type="text/css" href="{% static 'app/css/main.css' %}" rel="stylesheet">
+  <link type="text/css" id="css-preset" href="{% static 'app/css/presets/preset4.css' %}" rel="stylesheet">
+  <link type="text/css" href="{% static 'app/css/responsive.css' %}" rel="stylesheet">
 
  <!--[if lt IE 9]>
-    <script src="{% static "/app/js/html5shiv.js" %}"></script>
-    <script src="{% static "/app/js/respond.min.js" %}"></script>
+    <script src="{% static 'app/js/html5shiv.js' %}"></script>
+    <script src="{% static 'app/js/respond.min.js' %}"></script>
   <![endif]-->
   
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
-  <link rel="shortcut icon" href="{% static "/app/images/favicon.ico" %}">
+  <link rel="shortcut icon" href="{% static 'app/images/favicon.ico' %}">
 </head><!--/head-->
 
 <body>
@@ -33,7 +33,7 @@
   <header id="home">
     <div id="home-slider" class="carousel slide carousel-fade" data-ride="carousel">
       <div class="carousel-inner">
-        <div class="item active" style="background-image: url("{% static '/app/images/slider/1.jpg' %}")">
+        <div class="item active" style="background-image:url({% static 'app/images/slider/1.jpg' %})">
           <div class="caption">
           <h1 class="animated fadeInLeftBig">Instagram <span>Automation</span></h1>
           <p class="animated fadeInRightBig">Amazing - We like it</p>
@@ -41,7 +41,7 @@
           <a data-scroll class="btn btn-start animated fadeInUpBig" href="accounts/login">login</a>
           </div>
           </div>
-          <div class="item" style="background-image: url({% static "/app/images/slider/2.jpg"%})">
+          <div class="item" style="background-image: url({% static 'app/images/slider/2.jpg' %})">
             <div class="caption">
               <h1 class="animated fadeInLeftBig">Say Hello to <span> our Team</span></h1>
               <p class="animated fadeInRightBig">Awesome - Talented - Ambitious</p>
@@ -49,7 +49,7 @@
               <a data-scroll class="btn btn-start animated fadeInUpBig" href="accounts/login">login</a>
             </div>
           </div>
-          <div class="item" style="background-image: url(/static/images/slider/3.jpg)">
+          <div class="item" style="background-image: url({% static 'app/images/slider/3.jpg' %})">
             <div class="caption">
               <h1 class="animated fadeInLeftBig">We are <span>the instapys'</span></h1>
               <p class="animated fadeInRightBig">Followers - Likes - stories</p>
@@ -75,7 +75,7 @@
                 <span class="icon-bar"></span> 
               </button>
               <a class="navbar-brand" href="index.html">
-                <h1><img class="img-responsive" src="images/logo.png" alt="logo"></h1>
+                <h1><img class="img-responsive" src="{% static 'app/images/logo.png' %}" alt="logo"></h1>
               </a>                    
             </div>
             <div class="collapse navbar-collapse">
@@ -221,7 +221,7 @@
         <div class="col-sm-3">
           <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="300ms">
             <div class="folio-image">
-              <img class="img-responsive" src="images/portfolio/1.jpg" alt="">
+              <img class="img-responsive" src="{% static 'app/images/portfolio/1.jpg' %}" alt="">
             </div>
             <div class="overlay">
               <div class="overlay-content">
@@ -232,7 +232,7 @@
                   </div>
                   <div class="folio-overview">
                     <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html" ><i class="fa fa-link"></i></a></span>
-                    <span class="folio-expand"><a href="images/portfolio/portfolio-details.jpg" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                    <span class="folio-expand"><a href="{% static 'app/images/portfolio/portfolio-details.jpg' %}" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
                   </div>
                 </div>
               </div>
@@ -242,7 +242,7 @@
         <div class="col-sm-3">
           <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="400ms">
             <div class="folio-image">
-              <img class="img-responsive" src="images/portfolio/2.jpg" alt="">
+              <img class="img-responsive" src="{% static 'app/images/portfolio/2.jpg' %}" alt="">
             </div>
             <div class="overlay">
               <div class="overlay-content">
@@ -253,7 +253,7 @@
                   </div>
                   <div class="folio-overview">
                     <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html" ><i class="fa fa-link"></i></a></span>
-                    <span class="folio-expand"><a href="images/portfolio/portfolio-details.jpg" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                    <span class="folio-expand"><a href="{% static 'app/images/portfolio/portfolio-details.jpg' %}" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
                   </div>
                 </div>
               </div>
@@ -263,7 +263,7 @@
         <div class="col-sm-3">
           <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="500ms">
             <div class="folio-image">
-              <img class="img-responsive" src="images/portfolio/3.jpg" alt="">
+              <img class="img-responsive" src="{% static 'app/images/portfolio/3.jpg' %}" alt="">
             </div>
             <div class="overlay">
               <div class="overlay-content">
@@ -274,7 +274,7 @@
                   </div>
                   <div class="folio-overview">
                     <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html" ><i class="fa fa-link"></i></a></span>
-                    <span class="folio-expand"><a href="images/portfolio/portfolio-details.jpg" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                    <span class="folio-expand"><a href="{% static 'app/images/portfolio/portfolio-details.jpg' %}" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
                   </div>
                 </div>
               </div>
@@ -284,7 +284,7 @@
         <div class="col-sm-3">
           <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="600ms">
             <div class="folio-image">
-              <img class="img-responsive" src="images/portfolio/4.jpg" alt="">
+              <img class="img-responsive" src="{% static 'app/images/portfolio/4.jpg' %}" alt="">
             </div>
             <div class="overlay">
               <div class="overlay-content">
@@ -295,7 +295,7 @@
                   </div>
                   <div class="folio-overview">
                     <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html" ><i class="fa fa-link"></i></a></span>
-                    <span class="folio-expand"><a href="images/portfolio/portfolio-details.jpg" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                    <span class="folio-expand"><a href="{% static 'app/images/portfolio/portfolio-details.jpg' %}" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
                   </div>
                 </div>
               </div>
@@ -305,7 +305,7 @@
         <div class="col-sm-3">
           <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="700ms">
             <div class="folio-image">
-              <img class="img-responsive" src="images/portfolio/5.jpg" alt="">
+              <img class="img-responsive" src="{% static 'app/images/portfolio/5.jpg' %}" alt="">
             </div>
             <div class="overlay">
               <div class="overlay-content">
@@ -316,7 +316,7 @@
                   </div>
                   <div class="folio-overview">
                     <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html" ><i class="fa fa-link"></i></a></span>
-                    <span class="folio-expand"><a href="images/portfolio/portfolio-details.jpg" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                    <span class="folio-expand"><a href="{% static 'app/images/portfolio/portfolio-details.jpg' %}" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
                   </div>
                 </div>
               </div>
@@ -326,7 +326,7 @@
         <div class="col-sm-3">
           <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="800ms">
             <div class="folio-image">
-              <img class="img-responsive" src="images/portfolio/6.jpg" alt="">
+              <img class="img-responsive" src="{% static 'app/images/portfolio/6.jpg' %}" alt="">
             </div>
             <div class="overlay">
               <div class="overlay-content">
@@ -337,7 +337,7 @@
                   </div>
                   <div class="folio-overview">
                     <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html" ><i class="fa fa-link"></i></a></span>
-                    <span class="folio-expand"><a href="images/portfolio/portfolio-details.jpg" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                    <span class="folio-expand"><a href="{% static 'app/images/portfolio/portfolio-details.jpg' %}" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
                   </div>
                 </div>
               </div>
@@ -347,7 +347,7 @@
         <div class="col-sm-3">
           <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="900ms">
             <div class="folio-image">
-              <img class="img-responsive" src="images/portfolio/7.jpg" alt="">
+              <img class="img-responsive" src="{% static 'app/images/portfolio/7.jpg' %}" alt="">
             </div>
             <div class="overlay">
               <div class="overlay-content">
@@ -358,7 +358,7 @@
                   </div>
                   <div class="folio-overview">
                     <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html" ><i class="fa fa-link"></i></a></span>
-                    <span class="folio-expand"><a href="images/portfolio/portfolio-details.jpg" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                    <span class="folio-expand"><a href="{% static 'app/images/portfolio/portfolio-details.jpg' %}" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
                   </div>
                 </div>
               </div>
@@ -368,7 +368,7 @@
         <div class="col-sm-3">
           <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="1000ms">
             <div class="folio-image">
-              <img class="img-responsive" src="images/portfolio/8.jpg" alt="">
+              <img class="img-responsive" src="{% static 'app/images/portfolio/8.jpg' %}" alt="">
             </div>
             <div class="overlay">
               <div class="overlay-content">
@@ -379,7 +379,7 @@
                   </div>
                   <div class="folio-overview">
                     <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html" ><i class="fa fa-link"></i></a></span>
-                    <span class="folio-expand"><a href="images/portfolio/portfolio-details.jpg" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                    <span class="folio-expand"><a href="{% static 'app/images/portfolio/portfolio-details.jpg' %}" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
                   </div>
                 </div>
               </div>
@@ -407,7 +407,7 @@
           <div class="col-sm-3">
             <div class="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="300ms">
               <div class="member-image">
-                <img class="img-responsive" src="images/team/1.jpg" alt="">
+                <img class="img-responsive" src="{% static 'app/images/team/1.jpg' %}" alt="">
               </div>
               <div class="member-info">
                 <h3>Marian Dixon</h3>
@@ -428,7 +428,7 @@
           <div class="col-sm-3">
             <div class="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="500ms">
               <div class="member-image">
-                <img class="img-responsive" src="images/team/2.jpg" alt="">
+                <img class="img-responsive" src="{% static 'app/images/team/2.jpg' %}" alt="">
               </div>
               <div class="member-info">
                 <h3>Lawrence Lane</h3>
@@ -449,7 +449,7 @@
           <div class="col-sm-3">
             <div class="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="800ms">
               <div class="member-image">
-                <img class="img-responsive" src="images/team/3.jpg" alt="">
+                <img class="img-responsive" src="{% static 'app/images/team/3.jpg' %}" alt="">
               </div>
               <div class="member-info">
                 <h3>Lois Clark</h3>
@@ -470,7 +470,7 @@
           <div class="col-sm-3">
             <div class="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="1100ms">
               <div class="member-image">
-                <img class="img-responsive" src="images/team/4.jpg" alt="">
+                <img class="img-responsive" src="{% static 'app/images/team/4.jpg' %}" alt="">
               </div>
               <div class="member-info">
                 <h3>Marian Dixon</h3>
@@ -637,7 +637,7 @@
         <div class="row">
           <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">
             <div class="post-thumb">
-              <a href="#"><img class="img-responsive" src="images/blog/1.jpg" alt=""></a> 
+              <a href="#"><img class="img-responsive" src="{% static 'app/images/blog/1.jpg' %}" alt=""></a>
               <div class="post-meta">
                 <span><i class="fa fa-comments-o"></i> 3 Comments</span>
                 <span><i class="fa fa-heart"></i> 0 Likes</span> 
@@ -665,13 +665,13 @@
                 </ol>
                 <div class="carousel-inner">
                   <div class="item active">
-                    <a href="#"><img class="img-responsive" src="images/blog/2.jpg" alt=""></a>
+                    <a href="#"><img class="img-responsive" src="{% static 'app/images/blog/2.jpg' %}" alt=""></a>
                   </div>
                   <div class="item">
-                    <a href="#"><img class="img-responsive" src="images/blog/1.jpg" alt=""></a>
+                    <a href="#"><img class="img-responsive" src="{% static 'app/images/blog/1.jpg' %}" alt=""></a>
                   </div>
                   <div class="item">
-                    <a href="#"><img class="img-responsive" src="images/blog/3.jpg" alt=""></a>
+                    <a href="#"><img class="img-responsive" src="{% static 'app/images/blog/3.jpg' %}" alt=""></a>
                   </div>
                 </div>                               
                 <a class="blog-left-control" href="#post-carousel" role="button" data-slide="prev"><i class="fa fa-angle-left"></i></a>
@@ -696,7 +696,7 @@
           </div>
           <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="800ms">
             <div class="post-thumb">
-              <a href="#"><img class="img-responsive" src="images/blog/3.jpg" alt=""></a>
+              <a href="#"><img class="img-responsive" src="{% static 'app/images/blog/3.jpg' %}" alt=""></a>
               <div class="post-meta">
                 <span><i class="fa fa-comments-o"></i> 3 Comments</span>
                 <span><i class="fa fa-heart"></i> 0 Likes</span> 
@@ -779,7 +779,7 @@
     <div class="footer-top wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
       <div class="container text-center">
         <div class="footer-logo">
-          <a href="index.html"><img class="img-responsive" src="images/logo.png" alt=""></a>
+          <a href="index.html"><img class="img-responsive" src="{% static 'app/images/logo.png' %}" alt=""></a>
         </div>
         <div class="social-icons">
           <ul>
@@ -807,16 +807,16 @@
     </div>
   </footer>
 
-  <script type="text/javascript" src="{%  static "/app/js/jquery.js"%}"></script>
-  <script type="text/javascript" src="{%  static "/app/js/bootstrap.min.js" %}"></script>
+  <script type="text/javascript" src="{%  static 'app/js/jquery.js' %}"></script>
+  <script type="text/javascript" src="{%  static 'app/js/bootstrap.min.js' %}"></script>
   <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
-  <script type="text/javascript" src="{% static "/app/js/jquery.inview.min.js" %}"></script>
-  <script type="text/javascript" src="{% static "/app/js/wow.min.js" %}"></script>
-  <script type="text/javascript" src="{% static "/app/js/mousescroll.js" %}"></script>
-  <script type="text/javascript" src="{% static "/app/js/smoothscroll.js" %}"></script>
-  <script type="text/javascript" src="{% static "/app/js/jquery.countTo.js" %}"></script>
-  <script type="text/javascript" src="{% static "/app/js/lightbox.min.js" %}"></script>
-  <script type="text/javascript" src="{% static "/app/js/main.js" %}"></script>
+  <script type="text/javascript" src="{% static 'app/js/jquery.inview.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'app/js/wow.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'app/js/mousescroll.js' %}"></script>
+  <script type="text/javascript" src="{% static 'app/js/smoothscroll.js' %}"></script>
+  <script type="text/javascript" src="{% static 'app/js/jquery.countTo.js' %}"></script>
+  <script type="text/javascript" src="{% static 'app/js/lightbox.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'app/js/main.js' %}"></script>
 
 </body>
 </html>
