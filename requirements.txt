@@ -71,7 +71,7 @@ python-http-client==3.2.7
 python-telegram-bot==12.6.1
 pytz==2020.1
 pywin32-ctypes==0.2.0
-PyYAML==5.3.1
+PyYAML==5.4
 regex==2020.4.4
 requests==2.23.0
 selenium==3.141.0
