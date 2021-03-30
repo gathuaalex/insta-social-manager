@@ -22,7 +22,7 @@ connectors==4.0
 cryptography==2.9
 decorator==4.4.2
 distlib==0.3.0
-Django==3.0.7
+Django==3.0.12
 EasyProcess==0.2.10
 emoji==0.5.4
 filelock==3.0.12
