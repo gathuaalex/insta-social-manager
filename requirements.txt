@@ -57,7 +57,7 @@ packaging==20.3
 Pillow==7.1.2
 pluggy==0.13.1
 plyer==1.4.3
-protobuf==3.11.3
+protobuf==3.18.3
 py==1.8.1
 pycodestyle==2.5.0
 pycparser==2.20
